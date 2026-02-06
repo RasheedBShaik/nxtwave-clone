@@ -9,7 +9,7 @@ import FAQs from "@/components/FAQs";
 import Footer from "@/components/Footer";
 import GetCertified from "@/components/GetCertified";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Hero/Hero";
 import Media from "@/components/Media";
 import Prefer from "@/components/Prefer";
 import Trainers from "@/components/Trainers";
@@ -19,10 +19,10 @@ import WhyJoin from "@/components/WhyJoin";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen">
+    <div className="min-h-screen">
       <Header />
-      <main className="">
-        <Hero />
+      <main>
+        <Hero/>
         <Upgrades />
         <Trainers />
         <TrustedBy />
