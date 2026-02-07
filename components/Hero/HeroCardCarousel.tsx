@@ -51,7 +51,7 @@ const Herocardcarousel = () => {
   return (
     <div className="mt-10" >
         
-      <StyledCarousel dots >
+      <StyledCarousel dots autoplay >
         <HeroCompaniesCard/>
         <HeroSuryaCard/>
         <HeroDoubtsCard />

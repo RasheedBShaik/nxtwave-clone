@@ -14,7 +14,7 @@ const contentStyle: React.CSSProperties = {
 const HeroHighlights: React.FC = () => {
   return (
     <div className="px-4"> 
-      <div className="flex py-2 px-2 mb-8 items-center max-w-123 w-full gap-4 border-gray-300 border-2 rounded-4xl">
+      <div className="flex py-2 px-2 mx-auto lg:mx-0 mb-8 items-center max-w-123 w-full gap-4 border-gray-300 border-2 rounded-4xl">
         <label className="border w-15 py-1 text-white font-bold rounded-2xl text-center  bg-[#f97316]">
           NEW
         </label>
