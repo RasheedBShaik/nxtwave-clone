@@ -104,12 +104,12 @@ const GetReadyForYourIT = () => {
             </div>
 
             <div className="mt-10 flex flex-col md:flex-row items-center gap-5">
-              <Link href="#" className="bg-[#7c3aed] text-white rounded-2xl w-full py-3 max-w-50">
+              <Link href="#" className="bg-[#7c3aed] text-white font-semibold rounded-2xl w-full py-3 max-w-50">
                 Enroll Now
               </Link>
               <Link
                 href="#"
-                className="text-[#7c3aed] border py-3 rounded-2xl w-full max-w-50 text-center"
+                className="text-[#7c3aed] font-semibold border py-3 rounded-2xl w-full max-w-50 text-center"
               >
                 Book a Free Demo
               </Link>

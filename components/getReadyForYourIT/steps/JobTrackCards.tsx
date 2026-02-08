@@ -9,7 +9,7 @@ const JobTrackCards = () => {
       durationimg: "chooseYourJobTrack/duration.svg",
       duration: "Duration :6 Months",
       salaryimg: "chooseYourJobTrack/salary.svg",
-      salary: "Fresher salaries: 3LPA - 6LPA in India",
+      salary: "Fresher salaries: 3LPA - 6LPA In India",
       projectimg: "chooseYourJobTrack/salary.svg",
       project: "Real-time project",
       projectimgs: [
@@ -36,7 +36,7 @@ const JobTrackCards = () => {
       durationimg: "chooseYourJobTrack/duration.svg",
       duration: "Duration :6 Months",
       salaryimg: "chooseYourJobTrack/salary.svg",
-      salary: "Fresher salaries: 3LPA - 6LPA in India",
+      salary: "Fresher salaries: 3LPA - 6LPA In India",
       projectimg: "chooseYourJobTrack/salary.svg",
       project: "Real-time project",
       projectimgs: [
@@ -62,7 +62,7 @@ const JobTrackCards = () => {
       durationimg: "chooseYourJobTrack/duration.svg",
       duration: "Duration :3 Months",
       salaryimg: "chooseYourJobTrack/salary.svg",
-      salary: "Fresher salaries: 2LPA - 7LPA in India",
+      salary: "Fresher salaries: 2LPA - 7LPA In India",
       projectimg: "chooseYourJobTrack/salary.svg",
       project: "Real-time project",
       projectimgs: [{ projectimg: "chooseYourJobTrack/selenium.svg" }],
@@ -84,7 +84,7 @@ const JobTrackCards = () => {
       durationimg: "chooseYourJobTrack/duration.svg",
       duration: "Duration :3 Months",
       salaryimg: "chooseYourJobTrack/salary.svg",
-      salary: "Fresher salaries: 2LPA - 7LPA in India",
+      salary: "Fresher salaries: 2LPA - 7LPA In India",
       projectimg: "chooseYourJobTrack/salary.svg",
       project: "Real-time project",
       projectimgs: [

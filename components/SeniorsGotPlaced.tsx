@@ -63,8 +63,8 @@ const SeniorsGotPlaced = () => {
         </div>
 
         <div className="mt-10 flex flex-col md:flex-row items-center gap-5  justify-center">
-          <Link href="#" className="bg-[#7c3aed] text-white rounded-2xl text-center w-full py-3 max-w-50">Enroll Now</Link>
-          <Link href="#" className="text-[#7c3aed] w-full max-w-50 text-center">View All Reviews</Link>
+          <Link href="#" className="bg-[#7c3aed] text-white rounded-2xl text-center w-full py-3 max-w-50 font-semibold">Enroll Now</Link>
+          <Link href="#" className="text-[#7c3aed] w-full max-w-50 text-center font-semibold">View All Reviews</Link>
         </div>
       </Container>
     </section>
