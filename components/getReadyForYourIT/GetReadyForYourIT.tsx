@@ -41,7 +41,11 @@ const FlexWrapper = styled.div`
   }
   .ant-steps-item-icon.ant-wave-target {
     background-color: #334155 !important;
-    padding: 4px 8px !important;
+    border: 2px solid red;
+    position:relative;
+    left:-10px;
+    bottom:10px;
+    padding: 18.4px !important;
   }
 
   .ant-steps-item-icon {
