@@ -21,7 +21,6 @@ const Slide = styled.div`
   height: 100%;
   border-radius: 12px;
   overflow: hidden;
-  background: #f1f5f9;
 
   img {
     width: 100%;

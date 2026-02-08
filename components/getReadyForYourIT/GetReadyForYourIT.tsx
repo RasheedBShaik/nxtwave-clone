@@ -70,7 +70,6 @@ const StepColumn = styled.div`
 const GetReadyForYourIT = () => {
   return (
     <section className="w-full text-center text-4xl font-bold px-2 py-24 mx-auto max-w-7xl lg:px-0">
-      {/* <Container> */}
       <FlexWrapper>
         <StepColumn className="text-base font-normal">
           <div className="sticky top-0 py-10">
@@ -127,7 +126,6 @@ const GetReadyForYourIT = () => {
           />
         </StepColumn>
       </FlexWrapper>
-      {/* </Container> */}
     </section>
   );
 };

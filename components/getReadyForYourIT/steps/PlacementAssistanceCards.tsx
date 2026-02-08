@@ -25,7 +25,7 @@ const PlacementAssistanceCards = () => {
           </div>
 
           {/* Title */}
-          <h2 className="text-base font-medium text-gray-800">
+          <h2 className="text-base text-gray-800">
             {item.name}
           </h2>
         </div>
