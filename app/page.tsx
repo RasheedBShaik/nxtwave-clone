@@ -8,7 +8,7 @@ import Experiences from "@/components/Experiences";
 import FAQs from "@/components/FAQs";
 import Footer from "@/components/Footer";
 import GetCertified from "@/components/GetCertified";
-import GetReadyForIT from "@/components/GetReadyForIT";
+import GetReadyForYourIT from "@/components/getReadyForYourIT/GetReadyForYourIT";
 import GetYourDoubtsClarified from "@/components/GetYourDoubtsClarified";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero/Hero";
@@ -29,7 +29,7 @@ export default function Home() {
         <Upgrades />
         <Trainers />
         <SeniorsGotPlaced/>
-        <GetReadyForIT/>
+        <GetReadyForYourIT/>
         <GetYourDoubtsClarified/>
         <TrustedBy/>
         <Companies />

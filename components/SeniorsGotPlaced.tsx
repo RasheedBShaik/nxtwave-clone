@@ -63,7 +63,7 @@ const SeniorsGotPlaced = () => {
         </div>
 
         <div className="mt-10 flex flex-col md:flex-row items-center gap-5  justify-center">
-          <button className="bg-[#7c3aed] text-white rounded-2xl w-full py-3 max-w-50">Book Free Demo</button>
+          <Link href="#" className="bg-[#7c3aed] text-white rounded-2xl text-center w-full py-3 max-w-50">Enroll Now</Link>
           <Link href="#" className="text-[#7c3aed] w-full max-w-50 text-center">View All Reviews</Link>
         </div>
       </Container>

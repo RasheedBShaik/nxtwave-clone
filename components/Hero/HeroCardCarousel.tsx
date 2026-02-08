@@ -1,4 +1,7 @@
-import { Carousel } from "antd";
+"use client";
+
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import HeroBhargaviCard from "./hero-cards/HeroBhargavi";
 import HeroCompaniesCard from "./hero-cards/HeroCompaniesCard";
@@ -8,59 +11,90 @@ import HeroOnlineLabsCard from "./hero-cards/HeroOnlineLabsCard";
 import HeroSaiCard from "./hero-cards/HeroSaiCard";
 import HeroSuryaCard from "./hero-cards/HeroSuryaCard";
 
-const StyledCarousel = styled(Carousel)`
+// Import your cards here...
 
-  .slick-dots li {
-    width: 16px;
-    height: 16px;
-    margin: 0 4px;
-  }
-
-  .slick-dots li button {
-    width: 16px !important;
-    height: 16px !important;
-    padding: 0 !important;
-    background: transparent !important;
-    border: none !important;
-    position: relative !important;
-    opacity: 1 !important;
-  }
-
-
-  .slick-dots li button::after {
-    content: "" !important;
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 18px !important;
-    height: 8px !important;
-    border-radius: 50% !important;
-    background: #d1d5db !important;
-    transition: all 0.3s ease !important;
-  }
-
-  .slick-dots li.slick-active button::after {
-    width: 18px !important;
-    height: 12px !important;
-    background: #64748b !important;
-  }
+const Container = styled.div`
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  position: relative; /* Container is the anchor */
 `;
 
+const CardWindow = styled.div`
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+`;
+
+const Dot = styled.div<{ $active: boolean }>`
+  cursor: pointer;
+  width: ${(props) => (props.$active ? "24px" : "8px")};
+  height: ${(props) => (props.$active ? "6px" : "8px")};
+  background-color: ${(props) => (props.$active ? "#64748b" : "#cbd5e1")};
+  border-radius: 999px; /* Keeps edges rounded regardless of shape */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+`;
+
+const DotContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Essential to keep circles and pills on the same line */
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+`;
 const Herocardcarousel = () => {
+  const [index, setIndex] = useState(0);
+
+  const cards = [
+    <HeroCompaniesCard key="1" />,
+    <HeroSuryaCard key="2" />,
+    <HeroDoubtsCard key="3" />,
+    <HeroBhargaviCard key="4" />,
+    <HeroOnlineLabsCard key="5" />,
+    <HeroDeviCard key="6" />,
+    <HeroSaiCard key="7" />,
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [cards.length]);
+
   return (
-    <div className="mt-10" >
-        
-      <StyledCarousel dots autoplay >
-        <HeroCompaniesCard/>
-        <HeroSuryaCard/>
-        <HeroDoubtsCard />
-        <HeroBhargaviCard/>
-        <HeroOnlineLabsCard/>
-        <HeroDeviCard/>
-        <HeroSaiCard/>
-      </StyledCarousel>
-    </div>
+    <Container className="mt-10">
+      <CardWindow>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            {cards[index]}
+          </motion.div>
+        </AnimatePresence>
+
+        {/* Dots are now INSIDE the CardWindow at the bottom */}
+        <DotContainer>
+          {cards.map((_, i) => (
+            <Dot 
+              key={i} 
+              $active={index === i} 
+              onClick={() => setIndex(i)} 
+            />
+          ))}
+        </DotContainer>
+      </CardWindow>
+    </Container>
   );
 };
 

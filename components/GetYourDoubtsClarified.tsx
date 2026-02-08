@@ -1,9 +1,9 @@
 
 const GetYourDoubtsClarified = () => {
   return (
-    <div>
+    <section>
       
-    </div>
+    </section>
   )
 }
 
