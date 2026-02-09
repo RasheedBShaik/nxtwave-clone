@@ -69,11 +69,11 @@ const StepColumn = styled.div`
 
 const GetReadyForYourIT = () => {
   return (
-    <section className="w-full text-center text-4xl font-bold px-2 py-24 mx-auto max-w-7xl lg:px-0">
+    <section className="w-full text-center text-4xl font-bold px-2 pt-24 mx-auto max-w-7xl lg:px-0">
       <FlexWrapper>
-        <StepColumn className="text-base font-normal">
+        <StepColumn className="text-base md:px-4 lg:px-6 font-normal">
           <div className="sticky top-0 py-10">
-            <h2 className="text-5xl font-bold md:px-4 md:text-left">
+            <h2 className="text-5xl font-bold  md:text-left">
               Get Ready for Your <br />
               IT Career in{" "}
               <span className="relative inline-block">

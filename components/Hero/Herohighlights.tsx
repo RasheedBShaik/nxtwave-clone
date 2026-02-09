@@ -8,13 +8,13 @@ const contentStyle: React.CSSProperties = {
   color: "#ea580c",
   lineHeight: "1.2",
   fontWeight: "bold",
-  transition: "transform 1s ease-out", // Smooth transition for text movement
+  transition: "transform 1s ease-out",
 };
 
 const HeroHighlights: React.FC = () => {
   return (
-    <div className="px-4w-full overflow-hidden flex flex-col items-center lg:items-start">
-      {/* Top Badge - Centered on mobile */}
+    <div className="px-4 w-full overflow-hidden flex flex-col items-center lg:items-start">
+      {/* Top Badge */}
       <div className="flex py-2 px-2 mx-auto lg:mx-0 mb-8 items-center max-w-full sm:max-w-112.5 w-full gap-4 border-gray-300 border-2 rounded-4xl justify-center lg:justify-start">
         <label className="shrink-0 border w-15 py-1 text-white font-bold rounded-2xl text-center bg-[#f97316] text-xs sm:text-base">
           NEW
@@ -24,7 +24,7 @@ const HeroHighlights: React.FC = () => {
         </div>
       </div>
 
-      {/* Main Heading Container - Center aligned on mobile */}
+      {/* Main Heading Container */}
       <div className="flex flex-col items-center lg:items-start w-full text-center lg:text-left">
         <h2 className="text-3xl md:text-4xl lg:text-5xl leading-tight text-[#334155] font-semibold tracking-tight">
           A Proven Program
@@ -32,7 +32,7 @@ const HeroHighlights: React.FC = () => {
           To Make You a
         </h2>
 
-        {/* Carousel Container - Centered on mobile */}
+        {/* Carousel Container */}
         <div className="min-h-15 md:min-h-17.5 lg:min-h-20 py-5 overflow-hidden w-full flex justify-center items-center lg:justify-start">
           <Carousel
             autoplay
@@ -67,7 +67,7 @@ const HeroHighlights: React.FC = () => {
           </Carousel>
         </div>
 
-        {/* Underline SVG - With rotation */}
+        {/* Underline SVG */}
         <svg
           viewBox="0 0 52 6"
           xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ const HeroHighlights: React.FC = () => {
         </svg>
       </div>
 
-      {/* Hero Card Carousel - Stays below */}
+      {/* Hero Card Carousel */}
       <div className="w-full">
         <Herocardcarousel />
       </div>

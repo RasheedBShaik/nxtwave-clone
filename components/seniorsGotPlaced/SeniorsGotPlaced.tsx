@@ -1,7 +1,9 @@
 import { Tag } from "antd";
 import Link from "next/link";
 import { useState } from "react";
-import Container from "./Container";
+import Container from "../Container";
+import SeniorsGotPlacedCards from "./SeniorsGotPlacedCards";
+
 
 const tagsData = [
   "All",
@@ -16,7 +18,7 @@ const SeniorsGotPlaced = () => {
   const [selected, setSelected] = useState("All");
 
   return (
-    <section className="bg-[#f1f5f9] py-10">
+    <section className="bg-[#f1f5f9]">
       <Container>
         <h1 className="text-5xl font-bold text-center py-12">
           Your Seniors Got Placed. It's Your Turn Now!
@@ -44,14 +46,15 @@ const SeniorsGotPlaced = () => {
               </Tag.CheckableTag>
             );
           })}
-          movable carousel of success stories here based on the selected tag
+          
           {/* Cards */}
+          <SeniorsGotPlacedCards/>
           <br />
         </div>
         <div className="mt-12 flex items-center gap-5 justify-center">
           <div className="relative">
             {/* Glow */}
-            <span className="absolute -left-2 -inset-0.45 rounded-full h-7 w-7 bg-[#60a5fa] opacity-20"></span>
+            <span className="absolute -left-2 -inset-0.45 rounded-full h-7 w-7 bg-[#47505c] opacity-20"></span>
 
             {/* Dot */}
             <span className="relative inline-block w-2.5 h-2.5 rounded-full bg-[#2563fb] border border-[#2563fb]"></span>

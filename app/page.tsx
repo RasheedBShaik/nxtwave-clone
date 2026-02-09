@@ -16,7 +16,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero/Hero';
 import Media from '@/components/Media';
 import Prefer from '@/components/Prefer';
-import SeniorsGotPlaced from '@/components/SeniorsGotPlaced';
+import SeniorsGotPlaced from '@/components/seniorsGotPlaced/SeniorsGotPlaced';
 import Trainers from '@/components/Trainers';
 import TrustedBy from '@/components/TrustedBy';
 import Upgrades from '@/components/Upgrades';

@@ -73,12 +73,13 @@ const HeroForm = () => {
 
   return (
     <div className="w-full p-10 flex justify-center items-center">
-      <div className="max-w-150 xl:p-15 rounded-lg h-full w-full px-10 border-gray-100 py-12 border-3 transition-all duration-500 hover:-translate-y-1 ">
-        <div className="flex justify-between w-full mb-6">
-          <h1 className="text-3xl text-[#1e293b] font-semibold min-w-67.5">
+      <div className="max-w-150 xl:p-15 rounded-lg h-full w-full  px-4 lg:px-10 border-gray-100 py-12 border-3 transition-all duration-500 hover:-translate-y-1 ">
+        <div className="flex justify-between items-center w-full mb-6">
+          <h1 className=" text-xl md:text-3xl text-[#1e293b] font-semibold">
             Book a Live Demo
             <br />
-            <span className="text-blue-600">For Free !</span>
+            For
+            <span className="text-[#7c3aed]"> Free !</span>
           </h1>
           <div className="max-h-22 max-w-30.25 shrink-0">
             <img
@@ -125,12 +126,29 @@ const HeroForm = () => {
               },
             ]}
           >
-            <Input
-              prefix={<WhatsAppOutlined className="text-gray-400" />}
-              addonBefore="+91"
-              placeholder="Enter 10 Digit Number"
-              className="py-1 rounded-md overflow-hidden"
-            />
+            <div className="w-full flex gap-[1%]">
+              {/* Country Code - hidden on small screens */}
+              <Input
+                style={{
+                  width: "25%",
+                  padding:0,
+                  textAlign: "center",
+                }}
+                defaultValue="IN +91"
+                readOnly
+              />
+
+              {/* Phone Number */}
+              <Input
+                style={{
+                  width: "74%",
+                }}
+                prefix={<WhatsAppOutlined style={{ color: "#25D366" }} />}
+               type="number"
+                placeholder="Enter 10 Digit Number"
+                className="w-full sm:w-[74%]" // takes full width on mobile
+              />
+            </div>
           </Form.Item>
 
           {/* NOT REQUIRED: Qualification */}
@@ -145,7 +163,7 @@ const HeroForm = () => {
             <Select
               placeholder="Select Highest Qualification"
               className="h-11"
-              onDropdownVisibleChange={(open) => setQualOpen(open)}
+              onOpenChange={(open) => setQualOpen(open)}
               suffixIcon={<RotatingArrow isOpen={qualOpen} />}
             >
               {qualifications.map((q) => (
@@ -168,7 +186,7 @@ const HeroForm = () => {
               placeholder="Select State"
               className="h-11"
               showSearch
-              onDropdownVisibleChange={(open) => setStateOpen(open)}
+              onOpenChange={(open) => setStateOpen(open)}
               suffixIcon={<RotatingArrow isOpen={stateOpen} />}
             >
               {indianStates.map((s) => (
@@ -194,9 +212,9 @@ const HeroForm = () => {
             <Button
               type="primary"
               htmlType="submit"
-              className="w-full h-12 bg-blue-600  hover:bg-blue-700 rounded-md shadow-lg border-none active:scale-[0.98] transition-transform"
+              className="w-full! h-12! rounded-2xl! bg-[#7c3aed]! active:scale-[0.98] transition-transform"
             >
-              <span className="font-semibold">Book My Free Demo</span>
+              <span className="font-semibold">Book My Demo</span>
             </Button>
           </Form.Item>
         </Form>
