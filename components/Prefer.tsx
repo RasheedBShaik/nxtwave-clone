@@ -67,7 +67,7 @@ const Prefer = () => {
               {testimonialVideoIds.map((id, index) => (
                 <div
                   key={index}
-                  className="shrink-0 w-[280px] md:w-[320px] aspect-video rounded-xl overflow-hidden shadow-md bg-black border border-gray-100"
+                  className="shrink-0 w-70 md:w-[320px] aspect-video rounded-xl overflow-hidden shadow-md bg-black border border-gray-100"
                 >
                   <iframe
                     className="w-full h-full"
