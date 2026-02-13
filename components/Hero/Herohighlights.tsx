@@ -11,7 +11,7 @@ const contentStyle: React.CSSProperties = {
   transition: "transform 1s ease-out",
 };
 
-const HeroHighlights: React.FC = () => {
+const Herohighlights: React.FC = () => {
   return (
     <div className="px-4 w-full overflow-hidden flex flex-col items-center lg:items-start">
       {/* Top Badge */}
@@ -86,4 +86,4 @@ const HeroHighlights: React.FC = () => {
   );
 };
 
-export default HeroHighlights;
+export default Herohighlights;

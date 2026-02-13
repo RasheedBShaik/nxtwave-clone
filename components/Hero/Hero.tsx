@@ -1,7 +1,9 @@
 "use client"
 import Container from "../Container"
-import HeroForm from "./HeroForm"
-import HeroHighlights from "./HeroHighlights"
+import Heroform from "./Heroform"
+import Herohighlights from "./Herohighlights"
+
+
 
 
 
@@ -11,11 +13,11 @@ const Hero = () => {
 
     <section className="flex flex-col lg:flex-row">
       <div className="w-full lg:w-1/2 py-5 lg:py-20">
-      <HeroHighlights/>
+      <Herohighlights/>
       </div>
       <div className="w-full lg:w-1/2 py-5 lg:py-2 ">
 
-      <HeroForm />
+      <Heroform />
       </div>
     </section>
     </Container>

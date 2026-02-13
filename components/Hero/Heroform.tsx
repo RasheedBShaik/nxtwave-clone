@@ -10,7 +10,7 @@ import { useState } from "react";
 
 const { Option } = Select;
 
-const HeroForm = () => {
+const Heroform = () => {
   const [form] = Form.useForm();
 
   // State for rotating arrows
@@ -223,4 +223,4 @@ const HeroForm = () => {
   );
 };
 
-export default HeroForm;
+export default Heroform;
