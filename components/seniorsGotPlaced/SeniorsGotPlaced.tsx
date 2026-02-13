@@ -4,7 +4,6 @@ import { useState } from "react";
 import Container from "../Container";
 import SeniorsGotPlacedCards from "./SeniorsGotPlacedCards";
 
-
 const tagsData = [
   "All",
   "Non IT Branch to IT Job",
@@ -46,11 +45,13 @@ const SeniorsGotPlaced = () => {
               </Tag.CheckableTag>
             );
           })}
-          
-          {/* Cards */}
-          <SeniorsGotPlacedCards/>
-          <br />
         </div>
+
+        {/* Cards */}
+        <div>
+          <SeniorsGotPlacedCards selectedCategory={selected} />
+        </div>
+
         <div className="mt-12 flex items-center gap-5 justify-center">
           <div className="relative">
             {/* Glow */}
@@ -60,14 +61,22 @@ const SeniorsGotPlaced = () => {
             <span className="relative inline-block w-2.5 h-2.5 rounded-full bg-[#2563fb] border border-[#2563fb]"></span>
           </div>
 
-          <p className="text-lg">
-            Next batch starts from Feb 9th
-          </p>
+          <p className="text-lg">Next batch starts from Feb 9th</p>
         </div>
 
-        <div className="mt-10 flex flex-col md:flex-row items-center gap-5  justify-center">
-          <Link href="#" className="bg-[#7c3aed] text-white rounded-2xl text-center w-full py-3 max-w-50 font-semibold">Enroll Now</Link>
-          <Link href="#" className="text-[#7c3aed] w-full max-w-50 text-center font-semibold">View All Reviews</Link>
+        <div className="py-10 flex flex-col md:flex-row items-center gap-5  justify-center">
+          <a
+            href="#hero-form"
+            className="bg-[#7c3aed] text-white rounded-2xl text-center w-full py-3 max-w-50 font-semibold"
+          >
+            Enroll Now
+          </a>
+          <Link
+            href="#"
+            className="text-[#7c3aed] w-full max-w-50 text-center font-semibold"
+          >
+            View All Reviews
+          </Link>
         </div>
       </Container>
     </section>

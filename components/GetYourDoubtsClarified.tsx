@@ -52,7 +52,8 @@ const GetYourDoubtsClarified = () => {
 
               <div className="flex w-full justify-center md:justify-start my-10">
                 <Link
-                  href="#"
+                  href="#
+                  hero-form"
                   className="bg-[#7c3aed] text-white text-center font-semibold rounded-2xl w-full max-w-50 py-3 "
                 >
                   Enroll Now

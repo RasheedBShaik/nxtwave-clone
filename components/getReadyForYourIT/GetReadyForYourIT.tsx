@@ -1,7 +1,6 @@
 "use client";
 
 import { Steps } from "antd";
-import Link from "next/link";
 import styled from "styled-components";
 import ChooseYourJobTack from "./steps/ChooseYourJobTack";
 import Fundamentals from "./steps/Fundamentals";
@@ -42,9 +41,9 @@ const FlexWrapper = styled.div`
   .ant-steps-item-icon.ant-wave-target {
     background-color: #334155 !important;
     border: 2px solid red;
-    position:relative;
-    left:-10px;
-    bottom:10px;
+    position: relative;
+    left: -10px;
+    bottom: 10px;
     padding: 18.4px !important;
   }
 
@@ -104,15 +103,18 @@ const GetReadyForYourIT = () => {
             </div>
 
             <div className="mt-10 flex flex-col md:flex-row items-center gap-5">
-              <Link href="#" className="bg-[#7c3aed] text-white font-semibold rounded-2xl w-full py-3 max-w-50">
+              <a
+                href="#hero-form"
+                className="bg-[#7c3aed] text-white font-semibold rounded-2xl w-full py-3 max-w-50"
+              >
                 Enroll Now
-              </Link>
-              <Link
-                href="#"
+              </a>
+              <a
+                href="#hero-form"
                 className="text-[#7c3aed] font-semibold border py-3 rounded-2xl w-full max-w-50 text-center"
               >
                 Book a Free Demo
-              </Link>
+              </a>
             </div>
           </div>
         </StepColumn>

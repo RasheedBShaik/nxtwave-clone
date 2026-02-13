@@ -63,6 +63,7 @@ export default function Home() {
         <TrustedBy />
         <Companies />
         <Prefer />
+        {/* from here have pending */}
         <GetCertified />
         <WhyJoin />
         <Achievements />

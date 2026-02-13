@@ -72,8 +72,8 @@ const HeroForm = () => {
   );
 
   return (
-    <div className="w-full p-10 flex justify-center items-center">
-      <div className="max-w-150 xl:p-15 rounded-lg h-full w-full  px-4 lg:px-10 border-gray-100 py-12 border-3 transition-all duration-500 hover:-translate-y-1 ">
+    <div  id="hero-form" className="w-full p-10 flex justify-center items-center">
+      <div className=" max-w-150 xl:p-15 rounded-lg h-full w-full  px-4 lg:px-10 border-gray-100 py-12 border-3 transition-all duration-500 hover:-translate-y-1 ">
         <div className="flex justify-between items-center w-full mb-6">
           <h1 className=" text-xl md:text-3xl text-[#1e293b] font-semibold">
             Book a Live Demo

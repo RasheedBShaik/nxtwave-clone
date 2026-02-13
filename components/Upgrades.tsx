@@ -53,8 +53,8 @@ const Upgrades = () => {
   return (
     <section className="bg-[#f6f9fb]">
     <Container>
-      <div className="relative py-12 px-4 lg:px-0 ">
-        <label className="border absolute left-10 top-5 xl:top-10 xl:-left-10 w-20 py-1 text-white font-bold rounded-2xl text-center  bg-[#f97316]">NEW</label>
+      <div className="relative py-12 px-4  ">
+        <label className="border absolute left-10 top-5 w-20 py-1 text-white font-bold rounded-2xl text-center  bg-[#f97316]">NEW</label>
         <h1 className="flex flex-col justify-center items-center gap-2 font-bold text-xl md:text-3xl lg:text-5xl text-center">
           The All New Intensive 3.0 Upgrades to{" "}
           <span className="">Supercharge Your Career</span>
